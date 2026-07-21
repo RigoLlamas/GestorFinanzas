@@ -1,5 +1,12 @@
+# Archivos y configuración de Eclipse
 bin/
 *.class
 .classpath
 .project
 .settings/
+
+# Archivos empaquetados
+*.jar
+
+# Datos locales de la aplicación
+datos_financieros.dat
