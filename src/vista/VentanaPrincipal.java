@@ -127,6 +127,16 @@ public class VentanaPrincipal extends JFrame {
 		JPanel panelSuperior = new JPanel(new FlowLayout(FlowLayout.LEFT));
 		panelSuperior.add(labelSaldoTotal);
 		
+		JButton btnConfiguracion = new JButton("Configuración");
+		
+		// Dialogo para configuracion
+		btnConfiguracion.addActionListener(e -> {
+		    DialogoConfiguracion dialogo = new DialogoConfiguracion(this);
+		    dialogo.setVisible(true);
+		});
+
+		panelSuperior.add(btnConfiguracion);
+		
 		setLayout(new BorderLayout());
 	    add(panelSuperior, BorderLayout.NORTH);
 	    add(sistemaPestañas, BorderLayout.CENTER);

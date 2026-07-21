@@ -92,9 +92,7 @@ public class DialogoNuevaCuenta extends JDialog {
 		add(panelBotones, BorderLayout.SOUTH);
 	}
 	
-	/**
-	 * Método auxiliar para estandarizar la creación de filas ordenadas (Label + Componente)
-	 */
+	// Método auxiliar para estandarizar la creación de filas ordenadas (Label + Componente)
 	private JPanel crearFilaFormulario(String textoLabel, JComponent componente) {
 		JPanel fila = new JPanel(new GridLayout(1, 2, 10, 0));
 		JLabel label = new JLabel(textoLabel);
@@ -106,9 +104,7 @@ public class DialogoNuevaCuenta extends JDialog {
 		return fila;
 	}
 	
-	/**
-	 * Controla qué filas mostrar u ocultar según el tipo de cuenta seleccionado
-	 */
+	// Controla qué filas mostrar u ocultar según el tipo de cuenta seleccionado
 	private void alternarCamposPorTipo() {
 		String tipoSeleccionado = (String) comboTipoCuenta.getSelectedItem();
 		
